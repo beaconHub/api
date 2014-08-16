@@ -89,8 +89,8 @@ Beacon.create(
   name: 'Tuen Mun Plaza',
   description: 'Visitors',
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-  major: 2,
-  minor: 2,
+  major: 3,
+  minor: 3,
   address: "Tuen Mun Plaza, Hong Kong",
   link: "http://www.tmtp.com.hk/"
 )

@@ -6,7 +6,7 @@ class BeaconsController < ApplicationController
   # GET /search/near/:lat/lng(/:range).json
   def near
     range = if params[:range] then params[:range] else 3 end
-    @beacons = Beacon.near([params[:lat], params[:lng]], 3, :units => :km)
+    @beacons = Beacon.near([params[:lat], params[:lng]], range, :units => :km)
     render :index
   end
 
