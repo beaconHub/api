@@ -20,6 +20,6 @@
 //= require sb-admin-2
 //= require_tree .
 
-$(document).ready(function() {
+$(document).on('ready page:load', function() {
   $('#iBeacons-service-list').dataTable();
 });

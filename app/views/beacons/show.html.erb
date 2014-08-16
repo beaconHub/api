@@ -1,49 +1,76 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Show Beacon Service</h1>
+    <p id="notice"><%= notice %></p>
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel panel-default">
 
-<p>
-  <strong>Name:</strong>
-  <%= @beacon.name %>
-</p>
+      <div class="panel-heading">
+        Basic Form Elements
+      </div>
+      <!-- /.panel-heading -->
 
-<p>
-  <strong>Description:</strong>
-  <%= @beacon.description %>
-</p>
+      <div class="panel-body">
 
-<p>
-  <strong>Uuid:</strong>
-  <%= @beacon.uuid %>
-</p>
+        <p>
+          <strong>Name:</strong>
+          <%= @beacon.name %>
+        </p>
 
-<p>
-  <strong>Major:</strong>
-  <%= @beacon.major %>
-</p>
+        <p>
+          <strong>Description:</strong>
+          <%= @beacon.description %>
+        </p>
 
-<p>
-  <strong>Minor:</strong>
-  <%= @beacon.minor %>
-</p>
+        <p>
+          <strong>Uuid:</strong>
+          <%= @beacon.uuid %>
+        </p>
 
-<p>
-  <strong>Lat:</strong>
-  <%= @beacon.lat %>
-</p>
+        <p>
+          <strong>Major:</strong>
+          <%= @beacon.major %>
+        </p>
 
-<p>
-  <strong>Lng:</strong>
-  <%= @beacon.lng %>
-</p>
+        <p>
+          <strong>Minor:</strong>
+          <%= @beacon.minor %>
+        </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @beacon.address %>
-</p>
+        <p>
+          <strong>Lat:</strong>
+          <%= @beacon.lat %>
+        </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @beacon.link %>
-</p>
+        <p>
+          <strong>Lng:</strong>
+          <%= @beacon.lng %>
+        </p>
 
-<%= link_to 'Edit', edit_beacon_path(@beacon) %> |
-<%= link_to 'Back', beacons_path %>
+        <p>
+          <strong>Location:</strong>
+          <%= @beacon.address %>
+        </p>
+
+        <p>
+          <strong>Url:</strong>
+          <%= @beacon.link %>
+        </p>
+
+        <%= link_to 'Edit', edit_beacon_path(@beacon) %> |
+        <%= link_to 'Back', beacons_path %>
+
+      </div>
+      <!-- /.panel-body -->
+
+    </div>
+    <!-- /.panel -->
+  </div>
+  <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
