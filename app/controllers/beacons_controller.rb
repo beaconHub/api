@@ -1,6 +1,15 @@
 class BeaconsController < ApplicationController
   before_action :set_beacon, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:edit, :destroy]
+
+  # GET /search/near/:lat/lng(/:range)
+  # GET /search/near/:lat/lng(/:range).json
+  def near
+    range = if params[:range] then params[:range] else 3 end
+    binding.pry
+    @beacons = Beacon.near([params[:lat], params[:lng]], 3, :units => :km)
+    render :index
+  end
 
   # GET /beacons
   # GET /beacons.json
@@ -70,6 +79,6 @@ class BeaconsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def beacon_params
-      params.require(:beacon).permit(:name, :description, :uuid, :major, :minor, :lat, :lng, :location, :url)
+      params.require(:beacon).permit(:name, :description, :uuid, :major, :minor, :lat, :lng, :address, :url)
     end
 end

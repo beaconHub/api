@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
+
+  get "search/near/:lat/:lng(/:range)", :to => "beacons#near", :as => "near", :constraints => {:lat => /\-*\d+.\d+/ , :lng => /\-*\d+.\d+/ , :range => /\d+/}
   resources :beacons
 
   root 'beacons#index'
