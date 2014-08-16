@@ -9,7 +9,7 @@ class CreateBeacons < ActiveRecord::Migration
       t.float :lat
       t.float :lng
       t.string :location
-      t.string :url
+      t.string :link
 
       t.timestamps
     end
