@@ -1,9 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-body {
-  padding-top: 50px;
-}
+@import "font-awesome";
+@import "sb-admin-2";
+@import "plugins/dataTables.bootstrap";
 
 .container {
   margin: 0 auto;

@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
+//= require plugins/metisMenu/metisMenu.min
+//= require plugins/dataTables/jquery.dataTables
+//= require plugins/dataTables/dataTables.bootstrap
+//= require sb-admin-2
 //= require_tree .
+
+$(document).ready(function() {
+  $('#iBeacons-service-list').dataTable();
+});
