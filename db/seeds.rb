@@ -6,6 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+User.destroy_all
+
+User.create(email: 'info@beaconhub.org', password: 'beaconhub', password_confirmation: 'beaconhub')
+
 Beacon.destroy_all
 
 Beacon.create(
