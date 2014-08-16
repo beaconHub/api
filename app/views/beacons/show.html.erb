@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @beacon.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @beacon.description %>
+</p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @beacon.uuid %>
+</p>
+
+<p>
+  <strong>Major:</strong>
+  <%= @beacon.major %>
+</p>
+
+<p>
+  <strong>Minor:</strong>
+  <%= @beacon.minor %>
+</p>
+
+<p>
+  <strong>Lat:</strong>
+  <%= @beacon.lat %>
+</p>
+
+<p>
+  <strong>Lng:</strong>
+  <%= @beacon.lng %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @beacon.location %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @beacon.url %>
+</p>
+
+<%= link_to 'Edit', edit_beacon_path(@beacon) %> |
+<%= link_to 'Back', beacons_path %>
