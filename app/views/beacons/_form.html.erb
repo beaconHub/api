@@ -1,3 +1,5 @@
+<div class="row">
+
 <%= form_for(@beacon) do |f| %>
   <% if @beacon.errors.any? %>
     <div id="error_explanation">
@@ -11,43 +13,85 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="col-lg-6">
+    <div class="form-group">
+      <%= f.label :name, 'Service Name' %>
+      <%= f.text_field :name, :class => 'form-control' %>
+      <p class="help-block">Please input the name of the service</p>
+    </div>
+    <div class="form-group">
+      <%= f.label :description, 'Description' %>
+      <%= f.text_area :description, :class => 'form-control', :rows => '3' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :uuid %><br>
-    <%= f.text_field :uuid %>
-  </div>
-  <div class="field">
-    <%= f.label :major %><br>
-    <%= f.number_field :major %>
-  </div>
-  <div class="field">
-    <%= f.label :minor %><br>
-    <%= f.number_field :minor %>
-  </div>
-  <div class="field">
-    <%= f.label :lat %><br>
-    <%= f.text_field :lat %>
-  </div>
-  <div class="field">
-    <%= f.label :lng %><br>
-    <%= f.text_field :lng %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
-  </div>
-  <div class="actions">
+  <!-- /.col-lg-6 (nested) -->
+  <div class="col-lg-6">
+    <div class="form-group">
+      <%= f.label :uuid, 'Beacon UUID' %>
+      <%= f.text_field :uuid, :class => 'form-control' %>
+      <p class="help-block">UUID</p>
+    </div>
+    <div class="form-group">
+      <%= f.label :major, 'Major' %>
+      <%= f.number_field :major, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :minor, 'Minor' %>
+      <%= f.number_field :minor, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :link, 'Service URL' %>
+      <%= f.text_field :link, :class => 'form-control' %>
+      <p class="help-block">This is the URL associated to the beacon or the URL of an app to be used with it.</p>
+    </div>
+    <div class="form-group">
+      <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">Check me if it's an App.</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :address, 'Address' %>
+      <%= f.text_field :address, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :lng, 'Logitude' %>
+      <%= f.text_field :lng, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :lat, 'Latitude' %>
+      <%= f.text_field :lat, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-success">I'm there!</button>
+      <button type="button" class="btn btn-success">Map</button>
+    </div>
+    <div class="form-group">
+      <label>Which Industry?</label>
+      <select class="form-control">
+        <option>Retail</option>
+        <option>Government</option>
+        <option>Museum</option>
+        <option>Hopsitality</option>
+        <option>Education</option>
+        <option>Entertainment</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="" checked>Do you want to be discovered by OpenBeacon App?</label>
+        </div>
+    </div>
+
     <%= f.submit class: 'btn btn-primary' %>
+    <%= f.submit "Clear", class: 'btn btn-danger', :type => "reset" %>
+
   </div>
+  <!-- /.col-lg-6 (nested) -->
+
 <% end %>
+
+</div>
+<!-- /.row (nested) -->
