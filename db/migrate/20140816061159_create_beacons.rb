@@ -8,7 +8,7 @@ class CreateBeacons < ActiveRecord::Migration
       t.integer :minor
       t.float :lat
       t.float :lng
-      t.string :location
+      t.string :address
       t.string :link
 
       t.timestamps

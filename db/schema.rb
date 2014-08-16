@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140816064416) do
     t.integer  "minor"
     t.float    "lat"
     t.float    "lng"
-    t.string   "location"
+    t.string   "address"
     t.string   "link"
     t.datetime "created_at"
     t.datetime "updated_at"

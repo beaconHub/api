@@ -18,9 +18,7 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 8,
   minor: 7102,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
 Beacon.create(
@@ -29,9 +27,7 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 8,
   minor: 31008,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
 Beacon.create(
@@ -40,9 +36,7 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 8,
   minor: 31664,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
 Beacon.create(
@@ -51,9 +45,7 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 9,
   minor: 62353,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
 Beacon.create(
@@ -62,9 +54,7 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 9,
   minor: 26057,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
 Beacon.create(
@@ -73,8 +63,6 @@ Beacon.create(
   uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
   major: 9,
   minor: 50549,
-  lat: 23.3,
-  lng: 140.1,
-  location: "Garage Society",
+  address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
