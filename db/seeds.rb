@@ -66,3 +66,31 @@ Beacon.create(
   address: "33 Des Voeux Road, Central, Hong Kong",
   link: "http://www.thegaragesociety.com/"
 )
+
+Beacon.create(
+  name: 'Langham Place',
+  description: '',
+  uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+  major: 1,
+  minor: 1,
+  address: "Langham Place, Mongkok, Hong Kong",
+  link: "http://www.langhamplace.com.hk/"
+)
+Beacon.create(
+  name: 'Harbour City',
+  description: 'Star Ferry',
+  uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+  major: 2,
+  minor: 2,
+  address: "Tsim Sha Tsui, Hong Kong",
+  link: "http://www.harbourcity.com.hk/"
+)
+Beacon.create(
+  name: 'Tuen Mun Plaza',
+  description: 'Visitors',
+  uuid: "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+  major: 2,
+  minor: 2,
+  address: "Tuen Mun Plaza, Hong Kong",
+  link: "http://www.tmtp.com.hk/"
+)
