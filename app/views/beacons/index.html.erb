@@ -1,41 +1,33 @@
-<h1>Listing beacons</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Uuid</th>
-      <th>Major</th>
-      <th>Minor</th>
-      <th>Lat</th>
-      <th>Lng</th>
-      <th>Location</th>
-      <th>Url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @beacons.each do |beacon| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover" id="iBeacons-service-list">
+    <thead>
       <tr>
-        <td><%= beacon.name %></td>
-        <td><%= beacon.description %></td>
-        <td><%= beacon.uuid %></td>
-        <td><%= beacon.major %></td>
-        <td><%= beacon.minor %></td>
-        <td><%= beacon.lat %></td>
-        <td><%= beacon.lng %></td>
-        <td><%= beacon.address %></td>
-        <td><%= beacon.link %></td>
-        <td><%= link_to 'Show', beacon %></td>
-        <td><%= link_to 'Edit', edit_beacon_path(beacon) %></td>
-        <td><%= link_to 'Destroy', beacon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Service Name</th>
+        <th>Service URL</th>
+        <th>It's an App?</th>
+        <th>Industry</th>
+        <th>Usage</th>
+        <th>Action</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
+    </thead>
+    <tbody>
+      <% @beacons.each do |beacon| %>
+        <tr class="<%= cycle("odd", "even") -%>">
+          <td><%= beacon.name %></td>
+          <td><%= beacon.link %></td>
+          <td>Yes</td>
+          <td class="center">Library</td>
+          <td class="center">Push favourites</td>
+          <td>
+            <%= link_to 'Show', beacon, :class => 'btn btn-primary' %>
+            <%= link_to 'Edit', edit_beacon_path(beacon), :class => 'btn btn-primary' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<!-- /.table-responsive -->
 <br>
 
-<%= link_to 'New Beacon', new_beacon_path %>
+<%= link_to 'Add New Beacon Service', new_beacon_path, :class => 'btn btn-primary' %>
