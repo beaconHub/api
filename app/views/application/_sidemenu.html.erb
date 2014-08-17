@@ -16,12 +16,15 @@
         <%= link_to 'iBeacon Service Management<span class="fa arrow"></span>'.html_safe, beacons_path, :class => 'active' %>
         <ul class="nav nav-second-level">
           <li>
-            <%= link_to 'List of Beacon Services', beacons_path %>
+            <%= nav_link 'List of Beacon Services', beacons_path %>
           </li>
           <li>
-            <%= link_to 'Add New Service', new_beacon_path %>
+            <%= nav_link 'Add New Service', new_beacon_path %>
           </li>
         </ul>
+      </li>
+      <li>
+        <%= nav_link 'Map View', map_path, 'data-no-turbolink' => true %>
       </li>
     </ul>
   </div>

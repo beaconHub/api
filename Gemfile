@@ -6,6 +6,8 @@ gem 'rails', '4.1.2'
 
 gem 'devise'
 gem 'geocoder'
+gem 'gmaps4rails'
+gem 'underscore-rails'
 gem 'pry'
 
 # Use SCSS for stylesheets

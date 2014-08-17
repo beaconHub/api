@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get "search/near/:lat/:lng(/:range)", :to => "beacons#near", :as => "near", :constraints => {:lat => /\-*\d+.\d+/ , :lng => /\-*\d+.\d+/ , :range => /\d+/}
   resources :beacons
 
+  get 'map' => 'maps#index'
+
   root 'beacons#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
