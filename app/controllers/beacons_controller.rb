@@ -2,6 +2,8 @@ class BeaconsController < ApplicationController
   before_action :set_beacon, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:edit, :destroy]
 
+  protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
+
   # GET /search/near/:lat/lng(/:range)
   # GET /search/near/:lat/lng(/:range).json
   def near
