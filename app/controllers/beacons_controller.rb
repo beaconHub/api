@@ -1,6 +1,6 @@
 class BeaconsController < ApplicationController
   before_action :set_beacon, only: [:show, :edit, :update, :destroy]
-  # before_action :authenticate_user!, only: [:edit, :destroy]
+  before_action :authenticate_user!, only: [:edit, :destroy]
 
   # GET /search/near/:lat/lng(/:range)
   # GET /search/near/:lat/lng(/:range).json
