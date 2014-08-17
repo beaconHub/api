@@ -54,36 +54,7 @@
         </ul>
         <!-- /.navbar-top-links -->
 
-        <div class="navbar-default sidebar" role="navigation">
-          <div class="sidebar-nav navbar-collapse">
-            <ul class="nav" id="side-menu">
-              <li class="sidebar-search">
-                <div class="input-group custom-search-form">
-                  <input type="text" class="form-control" placeholder="Search...">
-                  <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">
-                      <i class="fa fa-search"></i>
-                  </button>
-                </span>
-                </div>
-                <!-- /input-group -->
-              </li>
-              <li>
-                <%= link_to 'iBeacon Service Management<span class="fa arrow"></span>'.html_safe, beacons_path, :class => 'active' %>
-                <ul class="nav nav-second-level">
-                  <li>
-                    <%= link_to 'List of Beacon Services', beacons_path %>
-                  </li>
-                  <li>
-                    <%= link_to 'Add New Service', new_beacon_path %>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <!-- /.sidebar-collapse -->
-        </div>
-        <!-- /.navbar-static-side -->
+        <%= render 'sidemenu' %>
       </nav>
 
       <div id="page-wrapper">
